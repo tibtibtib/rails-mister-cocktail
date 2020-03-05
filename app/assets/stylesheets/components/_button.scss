@@ -1,0 +1,11 @@
+.btn {
+  border-radius: 10px;
+}
+
+.add-btn {
+  color: $blue;
+  &:hover {
+    color: white;
+    background-color: $blue;
+  }
+}

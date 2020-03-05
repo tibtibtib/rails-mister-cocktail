@@ -2,3 +2,28 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+@import "card";
+@import "button";
+
+body {
+}
+
+.tib-title {
+  color: white;
+}
+
+.background {
+  margin: 5px 5px 5px 20px;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    text-align: center;
+    font-size: 72px;
+    color: white;
+  }
+}

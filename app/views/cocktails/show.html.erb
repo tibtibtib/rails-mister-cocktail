@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @cocktail.image_url %>)">
+      <h2><%= @cocktail.name %></h2>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-8">
+        <div class="m-3">
+          <h4>What you need:</h4>
+          <ul>
+            <% @cocktail.doses.each do |dose| %>
+              <li><%= dose.description %> <%= dose.ingredient.name %></li>
+            <% end %>
+          </ul>
+          </div>
+        </div>
+      <div class="col-4">
+        <div class="m-3"><%= render 'doses/form', cocktail: @cocktail, dose: @dose %></div>
+      </div>
+  </div>
+</div>
